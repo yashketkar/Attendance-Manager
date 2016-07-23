@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Attendance Manager</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="tour_background">#f8fafb</color>
+    <color name="ready_color">#25c19e</color>
+    <color name="welcome_start_button_normal">#bb000000</color>
+    <color name="welcome_start_button_pressed">#BB0099cc</color>
+    <color name="note_bg">#f1e7cc</color>
+    <color name="bunk_bg">#beb2e1</color>
+    <color name="budvisor_bg">#00ccff</color>
+    <color name="reminder_bg">#fca729</color>
+    <color name="white">#ffffff</color>
+
+    <string name="desc">Image Description</string>
+    <string name="addsub">Add Subject</string>
+    <string name="tellfriend">Tell a Friend</string>
+    <string name="tour_what_is_it_title">Hi there!</string>
+    <string name="tour_what_is_it">We college students have a habit of misplacing things, including our class bunk records. Attendance Manager solves this problem.</string>
+    <string name="tour_bunk_title">Oh, Wait</string>
+    <string name="tour_bunk_msg">If \"bunk\" sounds alien to you, it\'s a school slang used for skipping (not attending) a class.</string>
+    <string name="tour_budvisor_title">Attendance Manager</string>
+    <string name="tour_budvisor_msg">This is your Attendance Manager. He\'ll keep an eye on your bunks and advise whenever necessary.</string>
+    <string name="tour_notification_title">Ring Ring</string>
+    <string name="tour_notification_msg">Lastly, to ensure that you never forget to record bunks, Attendance Manager will send daily notifications. This is fully customizable.</string>
+    <string name="tour_next_button_label">NEXT ></string>
+    <string name="tour_im_ready_button_label">I\'M READY ></string>
+    <string name="tour_prev_button_label">&lt; PREV</string>
+
+    <color name="subject_bg">#33B5E5</color>
+
+    <string name="deletesub">Delete All Subjects</string>
+    <string name="send_feedback_bug_report">Send feedback/bug report</string>
+    <string name="rate_on_play_store">Rate on Play Store!</string>
+    <string name="about">About</string>
+    <string name="the_app">THE APP</string>
+    <string name="version">Version 1.0</string>
+    <string name="the_dev">THE DEVELOPER</string>
+    <string name="special_thanks">SPECIAL THANKS</string>
+    <string name="yash">Yash Ketkar</string>
+    <string name="tweet">Twitter</string>
+    <string name="gplus">Google Plus</string>
+    <string name="about_main_messsage">Attendance Manager let\'s you record your class bunks and helps you stay within attendance limits.</string>
+    <string name="dev_contact_message">I\'m an Engineering student. Passionate problem solver. Avid web aficionado. Social media buff. Connect with me: </string>
+    <string name="about_special_thanks_message"><b>Saket Narayan</b> the developer of Bunk-O-Meter app and the beta testers for their feedback &amp; bug reports:
+    \n\n<li>Gauri Ketkar</li>    \n<li>Vikrant Nemade</li>    \n<li>Aditya Kulkarni</li>    \n<li>Umang Joshi</li></string>
+    <string name="notification_ticker">This is ticker</string>
+    <string name="notification_title">This is Title</string>
+    <string name="notification_desc">Never miss to record a single bunk. Bunk-o-Meter will send daily notifications at the above set time.</string>
+    <string name="pm">PM</string>
+    <string name="am">AM</string>
+    <string name="notification_default_time">05:30</string>
+    <string name="touch_change">Touch to change</string>
+
+</resources>

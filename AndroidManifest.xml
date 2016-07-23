@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.attendance.manager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.attendance.manager.Tour"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.attendance.manager.AboutActivity"
+            android:label="@string/app_name" >
+
+            
+            <!--for Android 4.0 -->
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.attendance.manager" />
+            
+        
+        </activity>
+        <activity
+            android:name="com.attendance.manager.SettingsActivity"
+            android:label="@string/app_name" >
+        
+        
+            <!--for Android 4.0 -->
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.attendance.manager" />
+            
+        
+        </activity>
+        <activity
+            android:name="com.attendance.manager.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.attendance.manager.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".SampleBootReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SampleAlarmReceiver" >
+        </receiver>
+
+        <service android:name=".SampleSchedulingService" />
+    </application>
+
+</manifest>

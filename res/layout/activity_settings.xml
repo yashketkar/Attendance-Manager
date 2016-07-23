@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="onToggleClicked"
+        android:textOff="Notifications OFF"
+        android:textOn="Notifications ON" />
+
+    <RelativeLayout
+        android:id="@+id/notification_time_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/togglebutton"
+        android:background="@drawable/subject"
+        android:onClick="notificationTimePicker"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/notification_default_time"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/notification_time_meridiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/notification_time"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/pm"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/notification_tap_to_change_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-8dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/touch_change"
+            android:textColor="#777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/notification_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_tap_to_change_time"
+            android:background="#eff3f4"
+            android:fontFamily="sans-serif-light"
+            android:padding="16dp"
+            android:text="@string/notification_desc"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

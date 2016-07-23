@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/tell_friend"
+        android:menuCategory="system"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/tellfriend">
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        android:menuCategory="system"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="@string/action_settings">
+    </item>
+    <item
+        android:id="@+id/add_subject"
+        android:icon="@drawable/ic_action_new"
+        android:menuCategory="system"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/addsub">
+    </item>
+    <item
+        android:id="@+id/delete_subject"
+        android:menuCategory="system"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="@string/deletesub">
+    </item>
+    <item
+        android:id="@+id/about"
+        android:menuCategory="system"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="@string/about">
+    </item>
+    
+</menu>
