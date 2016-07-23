@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yashketkar.attendancemanager.MainActivity" >
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_new"
+        android:menuCategory="system"
+        android:orderInCategory="1"
+        android:title="@string/action_add"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/ic_action_about"
+        android:menuCategory="system"
+        android:orderInCategory="2"
+        android:title="@string/action_info"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_deleteall"
+        android:icon="@drawable/ic_action_discard"
+        android:menuCategory="system"
+        android:orderInCategory="3"
+        android:title="@string/action_deleteall"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_bunkall"
+        android:menuCategory="system"
+        android:orderInCategory="4"
+        android:title="@string/action_bunkall"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_settings"
+        android:menuCategory="system"
+        android:orderInCategory="5"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>
