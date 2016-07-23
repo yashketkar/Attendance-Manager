@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/note_bg"
+            android:gravity="center"
+            android:padding="16dp" >
+
+            <ImageView
+                android:id="@+id/flipper_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/note1" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bunk_bg"
+            android:gravity="center"
+            android:padding="16dp" >
+
+            <ImageView
+                android:id="@+id/flipper_sub_phy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/sub_phy" />
+
+            <ImageView
+                android:id="@+id/flipper_sub_maths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/sub_maths" />
+
+            <ImageView
+                android:id="@+id/flipper_sub_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/sub_history" />
+
+            <ImageView
+                android:id="@+id/flipper_sub_phy_bunk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bunk"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/flipper_sub_maths_bunk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bunk"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/flipper_sub_history_bunk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/bunk"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/budvisor_bg"
+            android:gravity="center"
+            android:padding="16dp" >
+
+            <ImageView
+                android:id="@+id/budvisor_hand"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-16dp"
+                android:contentDescription="@string/desc"
+                android:scaleType="fitEnd"
+                android:src="@drawable/tour_budvisor_hand" />
+
+            <ImageView
+                android:id="@+id/budvisor_face"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:padding="8dp"
+                android:src="@drawable/tour_budvisor_face" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/reminder_bg"
+            android:gravity="center"
+            android:padding="16dp" >
+
+            <ImageView
+                android:id="@+id/flipper_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/tour_notification" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_main"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.6" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/flipper_what_is_it"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/what_is_it_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/tour_what_is_it_title"
+                    android:textColor="#222"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/tour_what_is_it"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/flipper_bunk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="24dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/flipper_bunk_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/tour_bunk_title"
+                    android:textColor="#222"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/flipper_bunk_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/tour_bunk_msg"
+                    android:textColor="#333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/flipper_budvisor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/tour_budvisor_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/tour_budvisor_title"
+                    android:textColor="#222"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tour_budvisor_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/tour_budvisor_msg"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/flipper_reminder_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/tour_notification_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/tour_notification_title"
+                    android:textColor="#222"
+                    android:textSize="28sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tour_notification_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/tour_notification_msg"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/flipper_button_container"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:gravity="right"
+        android:paddingRight="24dp" >
+
+        <Button
+            android:id="@+id/flipper_prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="flipPrev"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text="@string/tour_prev_button_label"
+            android:textColor="@color/subject_bg"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/flipper_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="flipNext"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:text="@string/tour_next_button_label"
+            android:textColor="@color/subject_bg"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</LinearLayout>

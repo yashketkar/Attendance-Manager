@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tour_background">#f8fafb</color>
+    <color name="ready_color">#25c19e</color>
+    <color name="welcome_start_button_normal">#bb000000</color>
+    <color name="welcome_start_button_pressed">#BB0099cc</color>
+    <color name="subject_bg">#33B5E5</color>
+    <color name="note_bg">#f1e7cc</color>
+    <color name="bunk_bg">#beb2e1</color>
+    <color name="budvisor_bg">#00ccff</color>
+    <color name="reminder_bg">#cffdb9</color>
+    <color name="white">#ffffff</color>
+
+    <string name="app_name">Attendance Manager</string>
+    <string name="action_add">Add Subject</string>
+    <string name="action_info">View Report</string>
+    <string name="action_deleteall">Delete All</string>
+    <string name="action_bunkall">Bunk All</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc">Image Description</string>
+    <string name="attendbutton">Attend</string>
+    <string name="bunkbutton">Bunk</string>
+    <string name="listempty1">IT\&apos;S EMPTY HERE</string>
+    <string name="listempty2"> Go on, add your most hated subjects.</string>
+    <string name="tellfriend">Tell a Friend</string>
+    <string name="tour_what_is_it_title">Welcome</string>
+    <string name="tour_what_is_it">We college students have a habit of misplacing things, including our class bunk records. Attendance Manager solves this problem.</string>
+    <string name="tour_bunk_title">Oh, Wait</string>
+    <string name="tour_bunk_msg">If \"bunk\" sounds alien to you, it\'s a school slang used for skipping (not attending) a class.</string>
+    <string name="tour_budvisor_title">Hi there!</string>
+    <string name="tour_budvisor_msg">This is your Attendance Manager. He\'ll keep an eye on your bunks and advise whenever necessary.</string>
+    <string name="tour_notification_title">Backup/Restore</string>
+    <string name="tour_notification_msg">Lastly, to ensure that your records are not messed up, Attendance Manager will backup your data periodically to the cloud you can also backup to external storage and restore anytime.</string>
+    <string name="tour_next_button_label">NEXT ></string>
+    <string name="tour_im_ready_button_label">I\'M READY ></string>
+    <string name="tour_prev_button_label">&lt; PREV</string>
+    <string name="about_main_messsage">Attendance Manager let\'s you record your class bunks and helps you stay within attendance limits.</string>
+    <string name="image">Thumbnail</string>
+
+</resources>
